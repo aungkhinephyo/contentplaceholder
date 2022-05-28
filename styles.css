@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: #fafafa;
+}
+
+img{
+  max-width: 100%;;
+}
+
+.card{
+  width: 300px;
+  max-height: 400px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.card-header{
+  height: 200px;
+}
+
+.card-header img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-body{
+ padding: 10px 10px 5px;
+}
+
+.card-body h1{
+  font-size: 20px;
+  margin: 0 0 5px;
+}
+
+.card-body p{
+  font-size: 15px;
+}
+
+.card-author{
+  display: flex;
+  padding: 0 5px 10px;
+}
+
+
+.card-author .author-img{
+  border-radius: 50%;
+  overflow:hidden;
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+}
+
+.card-author .author-info{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-author .author-info strong{
+  width: 100px;
+  font-size: 15px;
+  margin: 0 0 5px;
+}
+
+.card-author .author-info small{
+  color: gray;
+  font-size: 12px;
+}
+
+.animate-bg{
+  background: linear-gradient(
+    to right,
+    #e0dfdf 0,
+    #e9e6e6 10%,
+    #e0dfdf 20%,
+    #e0dfdf 100%
+  );
+  background-size: 200% 100%;
+  animation: bgPos linear 1s infinite ;
+}
+
+.animate-text{
+  display: inline-block;
+  width:100%;
+  height: 10px;
+  border-radius: 10px;
+}
+
+@keyframes bgPos {
+  0%{
+    background-position: 50% 0;
+  }
+  100%{
+    background-position: -150% 0;
+  }
+}
